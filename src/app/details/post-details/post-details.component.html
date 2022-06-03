@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="toolbar">
+  <div class="toolbar-content">
+    <button mat-icon-button (click)="goBack()" aria-label="Go back icon">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <span>Details</span>
+  </div>
+</mat-toolbar>
+
+<div class="content">
+  <h2>{{ post.title }}</h2>
+
+  <div>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Body content</mat-label>
+      <textarea matInput cols="30" rows="10" readonly>{{ post.body }}</textarea>
+    </mat-form-field>
+  </div>
+</div>
